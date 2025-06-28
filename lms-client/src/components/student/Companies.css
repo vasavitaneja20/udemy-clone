@@ -1,0 +1,35 @@
+.companies-container {
+    padding-top: 4rem;
+    text-align: center;
+  }
+  
+  .companies-subtitle {
+    font-size: 1rem;
+    color: #6b7280; /* Tailwind's gray-500 */
+    margin-bottom: 1rem;
+  }
+  
+  .companies-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+  }
+  
+  .company-logo {
+    width: 5rem; /* 80px, equivalent to w-20 */
+  }
+  
+  @media (min-width: 768px) {
+    .companies-logos {
+      gap: 4rem;
+      margin-top: 2.5rem;
+    }
+  
+    .company-logo {
+      width: 7rem; /* 112px, equivalent to md:w-28 */
+    }
+  }
+  

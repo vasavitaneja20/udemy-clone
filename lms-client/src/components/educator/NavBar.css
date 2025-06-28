@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #6b7280; /* Tailwind gray-500 */
+  }
+  
+  @media (min-width: 768px) {
+    .navbar {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  
+  .navbar-logo {
+    width: 112px;
+  }
+  
+  @media (min-width: 1024px) {
+    .navbar-logo {
+      width: 128px;
+    }
+  }
+  
+  .navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #6b7280; /* Tailwind gray-500 */
+    position: relative;
+  }
+  
+  .navbar-profile-img {
+    max-width: 32px;
+  }
+  

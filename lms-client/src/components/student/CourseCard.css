@@ -1,0 +1,59 @@
+.course-card {
+    border: 1px solid rgba(107, 114, 128, 0.3); /* gray-500/30 */
+    padding-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .course-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .course-card-content {
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .course-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .course-card-educator {
+    color: #6b7280; /* gray-500 */
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .course-card-rating-stars {
+    display: flex;
+  }
+  
+  .course-card-rating-stars img {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .course-card-review-count {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .course-card-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937; /* gray-800 */
+  }
+ 

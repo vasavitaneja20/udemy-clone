@@ -1,0 +1,8 @@
+.container{
+    min-height: 100vh;
+    background-color: white;
+    /* Fallback if text-default is undefined: */
+    color: #1f2937; /* You can customize this */
+    width: 100%;
+    margin:0
+}

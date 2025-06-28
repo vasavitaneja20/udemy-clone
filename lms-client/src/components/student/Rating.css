@@ -1,0 +1,16 @@
+.rating-stars {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .star {
+    font-size: 22px;
+    cursor: pointer;
+    color: #cbd5e0; /* Gray-400 */
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .star.filled {
+    color: #facc15; /* Yellow-500 */
+  }
+  

@@ -1,0 +1,86 @@
+.add-course-container {
+    padding: 2rem;
+    font-family: sans-serif;
+  }
+  
+  .course-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .course-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .course-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .thumbnail-upload img {
+    max-height: 80px;
+    margin-top: 10px;
+  }
+  
+  .chapters {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+  }
+  
+  .chapter {
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  .chapter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lectures {
+    padding-left: 1rem;
+  }
+  
+  .lecture {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lecture-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lecture-form {
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    width: 300px;
+  }
+  
+  .submit-button {
+    background: black;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  

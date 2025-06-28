@@ -1,0 +1,85 @@
+.enrollments-container {
+    padding: 5rem;
+  }
+  
+  .enrollments-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .enrollments-table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .enrollments-thead {
+    color: #1f2937;
+    font-size: 0.875rem;
+    border-bottom: 1px solid rgba(107, 114, 128, 0.2);
+    text-align: left;
+  }
+  
+  .enrollments-th {
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  
+  .enrollments-tr {
+    border-bottom: 1px solid rgba(107, 114, 128, 0.2);
+  }
+  
+  .enrollments-td {
+    padding: 0.75rem 1rem;
+    color: #374151;
+    font-size: 0.875rem;
+    vertical-align: middle;
+  }
+  
+  .enrollments-course {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .enrollments-image {
+    width: 112px;
+    max-width: 100%;
+  }
+  
+  .enrollments-course-title {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+  }
+  
+  .enrollments-button {
+    padding: 0.5rem 1.25rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .enrollments-th,
+    .enrollments-td:not(:last-child) {
+      display: none;
+    }
+  
+    .enrollments-td:last-child {
+      text-align: right;
+    }
+  
+    .enrollments-button {
+      font-size: 0.75rem;
+      padding: 0.4rem 0.75rem;
+    }
+  
+    .enrollments-image {
+      width: 56px;
+    }
+  }
+  

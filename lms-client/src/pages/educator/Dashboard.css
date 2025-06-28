@@ -1,0 +1,112 @@
+.dashboard-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem 0;
+  }
+  
+  @media (min-width: 768px) {
+    .dashboard-container {
+      padding: 2rem;
+      padding-bottom: 0;
+    }
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    align-items: center;
+  }
+  
+  .dashboard-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    width: 14rem;
+    border: 1px solid #3b82f6;
+    border-radius: 0.375rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card-number {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4b5563;
+  }
+  
+  .card-label {
+    font-size: 1rem;
+    color: #6b7280;
+  }
+  
+  .dashboard-enrollments {
+    max-width: 64rem;
+    width: 100%;
+  }
+  
+  .enrollment-title {
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  .enrollment-table-wrapper {
+    overflow: hidden;
+    border: 1px solid rgba(107, 114, 128, 0.2);
+    background-color: #ffffff;
+    border-radius: 0.375rem;
+  }
+  
+  .enrollment-table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .enrollment-table thead {
+    color: #111827;
+    border-bottom: 1px solid rgba(107, 114, 128, 0.2);
+    font-size: 0.875rem;
+    text-align: left;
+  }
+  
+  .enrollment-table th,
+  .enrollment-table td {
+    padding: 0.75rem 1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .student-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .student-image {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+  
+  .hide-on-sm {
+    display: none;
+  }
+  
+  @media (min-width: 640px) {
+    .hide-on-sm {
+      display: table-cell;
+    }
+  }
+  

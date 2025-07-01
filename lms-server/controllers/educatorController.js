@@ -18,7 +18,8 @@ cloudinary.config({
 // update role of user to educator
 export const updateRoleToEducator = async (req, res) => {
     try {
-        const userId = req.auth.userId;
+        const { userId } = req.auth(); // ✅ proper way
+
 
         if (!userId) {
             return res.status(401).json({ success: false, message: 'User not authenticated.' });
@@ -136,25 +137,24 @@ export const addCourse = async (req, res) => {
 
 
   //get educator courses
-  export const getEducatorCourses = async(req, res) =>{
-     try {
-
-        const educator = req.auth.userId
-        const courses = await Course.find({educator})
-        res.json({success: true, courses})
-
-     } catch (error) {
-        
-        res.json({success: false, message: error.message})
-
-     }
+export const getEducatorCourses = async(req, res) =>{
+    try {
+      const { userId } = req.auth(); // ✅ proper way
+  
+      const courses = await Course.find({userId}) // <--- This line is the issue
+      res.json({success: true, courses})
+  
+    } catch (error) {
+      res.json({success: false, message: error.message})
+    }
   };
 
   //get educator dashboard
 export const educatorDashboardData = async(req, res)=>{
       try {
-        const educator = req.auth.userId;
-        const courses = await Course.find({educator});
+        const { userId } = req.auth(); // ✅ proper way
+
+        const courses = await Course.findById({userId});
         const totalCourses = courses.length;
         const courseIds = courses.map((course)=>course._id);
          
@@ -194,8 +194,9 @@ export const educatorDashboardData = async(req, res)=>{
 //get enrolled students data with purchase data
 export const getEnrolledStudentsData = async(req, res) =>{
     try {
-        const educator = req.auth.userId;
-        const courses = await Course.find({educator});
+        const { userId } = req.auth(); // ✅ proper way
+
+        const courses = await Course.findById({userId});
         const courseIds = courses.map(course=>course._id)
         
         const purchases = await Purchase.find({

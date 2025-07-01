@@ -5,7 +5,7 @@ import Course from '../models/Course.js';
 import stripe from 'stripe';
 import { CourseProgress } from '../models/CourseProgress.js';
 // In your userController.js file:
-import  { Purchase } from '../models/Purchase.js'; // <-- Change this line
+import Purchase from '../models/Purchase.js'; // <-- Change this line
 
 console.log("DEBUG: Purchase module loaded successfully with named import syntax.");
 

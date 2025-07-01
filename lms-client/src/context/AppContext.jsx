@@ -19,7 +19,11 @@ export const AppContextProvider = (props) => {
 
   // fetch all courses
   const fetchAllCourses = async () => {
-    setAllCourses(dummyCourses);
+    try {
+      
+    } catch (error) {
+      
+    }
   };
 
   // fetch user enrolled courses
